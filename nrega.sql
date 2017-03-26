@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 26, 2017 at 06:08 AM
+-- Generation Time: Mar 26, 2017 at 06:28 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -315,6 +315,18 @@ INSERT INTO `worker_data` (`jobcardNum`, `applicantNum`, `workerName`, `gender`,
 ('PB02002002001/185', 1, 'baldev singh', 'male', 23, NULL, 1512160692729, 'Oriental Bank of Commerce'),
 ('PB02002002001/188', 1, 'joginder singh', 'male', 35, NULL, 1512160692732, 'Oriental Bank of Commerce'),
 ('PB02002002001/189', 1, 'nirmal singh', 'male', 36, NULL, 1512160692733, 'Oriental Bank of Commerce');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `work_type`
+--
+
+CREATE TABLE `work_type` (
+  `workCatCode` varchar(2) NOT NULL,
+  `workTypeCode` varchar(3) NOT NULL,
+  `workDesc` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Indexes for dumped tables
