@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 26, 2017 at 05:38 AM
+-- Generation Time: Mar 26, 2017 at 06:08 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -242,8 +242,28 @@ INSERT INTO `villagedetails` (`panchayatCode`, `villageCode`, `villageName`) VAL
 
 CREATE TABLE `workcategory` (
   `workCatCode` varchar(2) NOT NULL,
-  `workName` varchar(20) NOT NULL
+  `workName` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `workcategory`
+--
+
+INSERT INTO `workcategory` (`workCatCode`, `workName`) VALUES
+('CA', 'Coastal Areas'),
+('DP', 'Drought Proofing'),
+('DW', 'Rural Drinking Water'),
+('FP', 'Flood Control'),
+('FR', 'Fisheries'),
+('IC', 'Irrigation Canals'),
+('IF', 'Irrigation Facilities To SC/ST/IAY/LR'),
+('LD', 'Land development'),
+('OP', 'Other Works'),
+('RC', 'Rural Connectivity'),
+('RS', 'Rural Sanitation'),
+('SK', 'Bharat Nirman Rajiv Gandhi Sewa Kendra'),
+('WC', 'Water Conservation'),
+('WH', 'Renovation of traditional water bodies');
 
 -- --------------------------------------------------------
 
